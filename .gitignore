@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local caches and temporary files
+.cache/
+tmp/
+temp/
+*.log
+
+# Large or non-redistributable local source material
+data/source_pdfs/
+
+# Generated local artifacts not yet curated
+outputs/local/

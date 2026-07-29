@@ -18,13 +18,16 @@ The first empirical action is an eight-paragraph throughput pilot. The full stud
 
 See:
 
-- `docs/research-plan.md` for the proposed design
-- `preregistration/pilot-preregistration.md` for frozen pilot decisions
-- `research-log/LOG.md` for chronological work
-- `decisions/DECISIONS.md` for methodological decisions
-- `experiments/registry.csv` for experiment status
-- `AGENTS.md` for Codex and agent operating rules
-- `WORKFLOW.md` for the cross-device synchronization protocol
+- [Canonical project tracker](docs/project-tracker.md) for current status, decisions, blockers, gates, and next actions
+- [Research plan](docs/research-plan.md) for the proposed design
+- [Pilot preregistration](preregistration/pilot-preregistration.md) for frozen pilot decisions
+- [Research log](research-log/LOG.md) for chronological work
+- [Decision log](decisions/DECISIONS.md) for methodological decisions
+- [`experiments/registry.csv`](experiments/registry.csv) for experiment status
+- [`AGENTS.md`](AGENTS.md) for Codex and agent operating rules
+- [`WORKFLOW.md`](WORKFLOW.md) for the cross-device synchronization protocol
+
+The project tracker is the canonical operational view. The preregistration and decision log govern which methodological choices are frozen.
 
 ## Repository principles
 

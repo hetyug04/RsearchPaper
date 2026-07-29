@@ -1,0 +1,3 @@
+experiment_id,title,status,confirmatory_status,owner,branch,preregristration_path,input_manifest,prompt_version,model,code_commit,output_path,started_at,completed_at,notes
+EXP-000,Repository and protocol initialization,complete,operational,Het Patel,main,preregistration/pilot-preregistration.md,,,,,research-log/LOG.md,2026-07-29,2026-07-29,No scientific generation performed
+EXP-001,Eight-paragraph feasibility pilot,planned,pilot,unassigned,,preregistration/pilot-preregistration.md,,,,,,,,Domain and generation configuration not yet frozen

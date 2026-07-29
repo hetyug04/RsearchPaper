@@ -31,7 +31,10 @@
 - [x] Fix judge-validation gates.
 - [x] Fix human-scoring rubric and workload ceiling.
 - [x] Freeze pilot protocol.
-- [ ] Build candidate-paper inventory.
+- [x] Build candidate-paper inventory. (167 metadata-cross-checked; 119-record
+  fixed discovery frame; 19 manually inspected eligible/reserve papers)
+- [x] Resolve the blocked-database cross-check through the local/Colab pipeline.
+- [x] Operationalize the conference-abstract identity rule (D-007).
 - [ ] Attempt and log eight candidate paragraphs.
 - [ ] Verify all eight against inclusion rules.
 - [ ] Prepare prompts and schemas before generation.
@@ -42,4 +45,19 @@ Proceed only if at least 6 of 8 attempted paragraphs are usable, all four condit
 
 ## Next action
 
-Create the candidate-paper inventory and attempt the first eight paragraph annotations without generating primary model outputs.
+1. Confirm or reject the conservative human-review disposition for
+   `PMC12418469`; it remains excluded meanwhile.
+2. Select the eight pilot paragraphs from the revised four-paper configuration
+   in `docs/corpus/eligible-paper-inventory.md`.
+3. Attempt the eight paragraph annotations without generating primary outputs.
+
+## Open corpus risks
+
+- Unpaywall is source-incomplete until a real contact email is provided.
+- OpenAlex succeeded without a key, but its current documentation requests a
+  free key for stable publication use.
+- 101 structurally eligible discovery records remain pending human scope review;
+  this is retained as unresolved work rather than silently discarded.
+- Limitation-paragraph supply remains the likely binding constraint at 48 items,
+  although the enlarged inventory comfortably supports the eight-item pilot.
+- Several papers carry summary boxes ("Research in context", "What Is New?", "KEY MESSAGE") that restate headline findings and must be excluded from true-context and distractor windows.

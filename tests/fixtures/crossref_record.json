@@ -1,0 +1,15 @@
+{
+  "DOI": "10.1000/example",
+  "published-online": {
+    "date-parts": [[2025, 5, 21]]
+  },
+  "published-print": {
+    "date-parts": [[2025, 7]]
+  },
+  "created": {
+    "date-parts": [[2025, 5, 22]]
+  },
+  "deposited": {
+    "date-parts": [[2026, 1, 4]]
+  }
+}

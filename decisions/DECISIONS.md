@@ -51,3 +51,79 @@ Record methodological and operational decisions here. Each entry must include da
 **Alternatives considered:** Qwen-family generators; broader clinical specialties; two-condition design; stochastic repeated generation; local small-model judge as primary.
 
 **Consequences:** Primary pilot generation may begin only from this frozen protocol. Any methodological change requires a new version and decision-log entry; failed or inconvenient items cannot be silently replaced.
+
+## D-005 — 2026-07-29
+
+**Status:** proposed — requires researcher ruling before paragraph selection
+
+**Decision sought:** Whether a published conference abstract counts as an "earliest public version" under the corpus temporal rule.
+
+**Context:** Screening for the eligible-paper inventory found two structurally strong candidates whose PMC publication dates are comfortably post-cutoff but for which a congress abstract of apparently the same analysis appeared before 2024-12-01:
+
+- `PMC12093672` — BMC Medicine, Portfolio dietary pattern and CVD mortality. Congress abstract: *Circulation* 2023;148(suppl_1):Abstract 14297, November 2023.
+- `PMC12418469` — JACC: Advances, cholesterol levels after statin initiation. Congress abstract: *European Heart Journal* 2024;45(Suppl 1):ehae666.2860, October 2024 (title differs; cohort description matches, but identity of analysis is unconfirmed).
+
+**Screening treated both as ineligible**, on the reading that a published abstract is a public version of the same findings and therefore a contamination surface. This is the conservative reading and it was applied without regard to how convenient the papers were — `PMC12093672` would likely have ranked in the top four.
+
+**Alternatives considered:** (a) count congress abstracts as public appearance (current screening behaviour); (b) count only preprints, accepted manuscripts, and full publications, excluding abstracts; (c) count abstracts only when the abstract states the study's central numerical results.
+
+**Consequences:** Under (b) or (c), both papers are reinstatable and the ranked inventory changes. The preregistration says "earliest public version" without defining the term; it should be defined explicitly before any primary generation, and the ruling recorded here.
+
+## D-006 — 2026-07-29
+
+**Status:** accepted
+
+**Decision:** Record the corpus-discovery search frame as non-reproducible from the current execution environment, rather than presenting it as a systematic PMC query.
+
+**Rationale:** NCBI E-utilities, the PMC website, Europe PMC, Crossref, OpenAlex, and the preprint-server APIs are all blocked by this environment's egress policy, and `WebFetch` is blocked for all hosts. The PMC OA Subset metadata filelists, which would have supplied a systematic sampling frame, return 404 under the bucket's current per-PMCID layout. Discovery therefore had to run through web search, which is non-exhaustive and biased toward well-indexed papers.
+
+**Alternatives considered:** presenting the web-search yield as if it were a boolean PMC query; loosening criteria to fill the inventory faster; routing around the egress policy.
+
+**Consequences:** Every fact in the inventory is verified against primary JATS full text, so the *records* are sound, but the *sampling* is a convenience sample and must be described that way. The search must be re-run from an unrestricted network before the 48-paragraph study. Preprint checking was best-effort, which is why five papers were excluded on unresolved date uncertainty rather than admitted optimistically.
+
+## D-007 — 2026-07-29
+
+**Status:** accepted; operational clarification of D-005
+
+**Decision:** A conference abstract counts as an earlier public artifact only
+when the full abstract supports both same-study identity and materially similar
+central analysis under the two-axis rule in
+`data/interim/conference-abstract-review.csv`.
+
+**Rationale:** A title-level topic match is too weak, while a full abstract that
+discloses the same population, exposure, outcome, estimand, and central result
+creates the same direct-exposure risk as a preprint. The rule makes the
+previously ambiguous phrase "earliest public version" auditable without changing
+the frozen cutoff or study hypothesis.
+
+**Alternatives considered:** ignore all conference abstracts; exclude on title
+similarity alone; count every abstract from an overlapping author group.
+
+**Consequences:** `PMC12093672` remains excluded because its 2023 abstract
+automatically clears both thresholds. `PMC12418469` remains conservatively
+excluded pending owner confirmation because the full 2024 abstract strongly
+matches the analysis but the identity score lacks a unique cohort accession.
+No borderline item may be admitted optimistically.
+
+## D-008 — 2026-07-29
+
+**Status:** accepted; supersedes the environmental limitation in D-006
+
+**Decision:** Use the local/Colab-compatible cached scholarly pipeline and fixed
+NCBI PMC query as the reproducible pilot discovery frame.
+
+**Rationale:** The user's local machine reached PMC OA AWS, NCBI E-utilities,
+Europe PMC, Crossref, OpenAlex, and medRxiv/bioRxiv. The rerun retained the
+complete query result before screening and recorded request-level provenance,
+conflicts, and source-incomplete states.
+
+**Alternatives considered:** retain the web-search convenience frame; require
+all optional APIs to be credentialed before any rerun; describe the pilot as a
+systematic review.
+
+**Consequences:** D-006's claim that the search cannot be reproduced is no
+longer current. The new frame is auditable but intentionally narrow and is not
+a systematic-review claim. Unpaywall remains explicitly incomplete because no
+real contact email was available; OpenAlex succeeded without a key but should
+use its free key for a publication release. Historical artifacts remain under
+`data/interim/legacy/`.

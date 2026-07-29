@@ -14,11 +14,17 @@ This is not being framed as RLVR. A model judging another model is closer to mod
 
 Phase 1: frozen eight-paragraph feasibility pilot.
 
-The next action is to build the eligible-paper inventory and attempt eight candidate paragraph annotations. Primary generation proceeds only under the frozen protocol and only after the candidate items pass the inclusion rules.
+The eligible-paper inventory and extended database cross-check are complete.
+The next action is to confirm the remaining conference-abstract review case,
+then attempt eight candidate paragraph annotations. Primary generation proceeds
+only under the frozen protocol and after the candidate items pass the inclusion
+rules.
 
 See:
 
 - `docs/project-tracker.md` for current status and next actions
+- `docs/corpus/eligible-paper-inventory.md` for the rerunnable corpus search,
+  ranked inventory, and revised four-paper configuration
 - `docs/research-plan.md` for the proposed design
 - `preregistration/pilot-preregistration.md` for the frozen pilot protocol
 - `research-log/LOG.md` for chronological work
@@ -63,3 +69,10 @@ See:
 ```
 
 Empty directories are represented by `.gitkeep` files until populated.
+
+Committed scholarly API responses are bundled by provider. Restore the
+individual request-cache files for offline rebuilding with:
+
+```bash
+python3 scripts/bundle_metadata_cache.py unpack
+```

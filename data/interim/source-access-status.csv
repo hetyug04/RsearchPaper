@@ -1,0 +1,9 @@
+source,records,status_counts,run_at_utc
+pmc_aws,167,"{""complete"":167}",2026-07-29T20:43:36+00:00
+ncbi,167,"{""complete"":167}",2026-07-29T20:43:36+00:00
+europe_pmc,167,"{""complete"":49,""not_found"":118}",2026-07-29T20:43:36+00:00
+crossref,167,"{""complete"":167}",2026-07-29T20:43:36+00:00
+openalex,167,"{""complete_unauthenticated_compatibility"":167}",2026-07-29T20:43:36+00:00
+medrxiv,167,"{""match"":1,""not_found"":166}",2026-07-29T20:43:36+00:00
+biorxiv,167,"{""not_found"":167}",2026-07-29T20:43:36+00:00
+unpaywall,167,"{""source_incomplete_missing_contact_email"":167}",2026-07-29T20:43:36+00:00

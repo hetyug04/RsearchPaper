@@ -14,11 +14,12 @@ This file is the canonical operational tracker for the research arc. It summariz
 | Last updated | 2026-07-29 |
 | Planned study start | `TBD — after pilot configuration is frozen` |
 | Planned study finish | `TBD — four working days after start` |
-| Tracker creation commit | `TBD — fill with branch commit SHA` |
+| Tracker creation commit | [`40ffbd6a0eb4cbec48cab9d5e658dcd97ea4e339`](https://github.com/hetyug04/RsearchPaper/commit/40ffbd6a0eb4cbec48cab9d5e658dcd97ea4e339) |
 | Pilot freeze commit | `TBD — required before primary pilot generation` |
 | Primary analysis commit | `TBD` |
 | Release/manuscript commit | `TBD` |
 | Active branch | `agent/canonical-project-tracker` |
+| Delivery pull request | [#3 — Add canonical project tracker](https://github.com/hetyug04/RsearchPaper/pull/3) |
 | Related issues | [#1 — Select domain and freeze pilot](https://github.com/hetyug04/RsearchPaper/issues/1); [#2 — Run the feasibility pilot](https://github.com/hetyug04/RsearchPaper/issues/2) |
 | Formal decision record | [`decisions/DECISIONS.md`](../decisions/DECISIONS.md) |
 

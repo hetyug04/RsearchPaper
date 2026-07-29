@@ -2,6 +2,17 @@
 
 Append entries in reverse chronological order. Do not rewrite prior entries except to correct a factual error, and record the correction separately.
 
+## 2026-07-29 — Day 1 targeted novelty scan completed
+
+- Added `docs/literature/day1-novelty-scan.md` in commit `b29297b55454ccf9f8554784a3e7c27310bd0f07`.
+- Searched scientific infilling, scientific context perturbation, claim/evidence annotation, biomedical evidence inference, factuality evaluation, planted-error judge validation, and reasoning-trace verification.
+- Used the portfolio Novelty Gauntlet (`masked-paragraph-context-audit`, verdict `NARROWED`) and a two-family AI Council with OpenAI Codex `gpt-5.6-sol` and Anthropic Claude `sonnet`.
+- Prompt version: `day1-novelty-scan-v1`; search date: 2026-07-29; output path: `docs/literature/day1-novelty-scan.md`.
+- No experimental seed, decoding parameters, or primary input IDs apply because this was a literature audit, not a generation experiment.
+- Verdict: incremental but defensible, confidence 86/100. No direct duplicate was found, but all individual components have substantial precedent.
+- Primary design warning: the frozen four conditions compare context regimes but do not causally isolate support-bearing evidence.
+- Recommended follow-up for a future protocol version: test an evidence-ablated adjacent-context condition on a preregistered subset. The frozen pilot protocol was not changed by this scan.
+
 ## 2026-07-29 — Pilot protocol frozen
 
 - Selected clinical and observational epidemiology, focused on cardiovascular and metabolic cohort research.

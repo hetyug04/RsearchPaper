@@ -31,7 +31,7 @@
 - [x] Fix judge-validation gates.
 - [x] Fix human-scoring rubric and workload ceiling.
 - [x] Freeze pilot protocol.
-- [ ] Build candidate-paper inventory.
+- [x] Build candidate-paper inventory. (`docs/corpus/eligible-paper-inventory.md`; 48 screened, 12 eligible)
 - [ ] Attempt and log eight candidate paragraphs.
 - [ ] Verify all eight against inclusion rules.
 - [ ] Prepare prompts and schemas before generation.
@@ -42,4 +42,12 @@ Proceed only if at least 6 of 8 attempted paragraphs are usable, all four condit
 
 ## Next action
 
-Create the candidate-paper inventory and attempt the first eight paragraph annotations without generating primary model outputs.
+1. Rule on D-005: does a published conference abstract count as an "earliest public version"? This decides whether `PMC12093672` and `PMC12418469` re-enter the inventory.
+2. Select the eight pilot paragraphs from `data/interim/eligible-paper-inventory.csv`. A four-paper configuration satisfying the frozen 3/3/2 mixture entirely within the 100–220 word band is proposed in `docs/corpus/eligible-paper-inventory.md` §5.
+3. Attempt the eight paragraph annotations without generating primary model outputs.
+
+## Open corpus risks
+
+- The discovery search frame is not reproducible from the current environment (D-006); re-run from an unrestricted network before the 48-paragraph study.
+- Usable limitation paragraphs are the binding corpus constraint: 5 genuine limitation paragraphs fall in the 100–220 word band across the 12 eligible papers. Sufficient for the 8-item pilot, likely insufficient for 48 items without a preregistered amendment.
+- Several papers carry summary boxes ("Research in context", "What Is New?", "KEY MESSAGE") that restate headline findings and must be excluded from true-context and distractor windows.

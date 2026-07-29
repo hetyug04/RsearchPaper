@@ -28,7 +28,7 @@ Record methodological and operational decisions here. Each entry must include da
 
 ## D-003 — 2026-07-29
 
-**Status:** proposed, not frozen
+**Status:** accepted and frozen
 
 **Decision:** Use an eight-paragraph feasibility pilot before scaling to the proposed 48-item study.
 
@@ -36,4 +36,18 @@ Record methodological and operational decisions here. Each entry must include da
 
 **Alternatives considered:** immediately annotate 48 items; table-only study; human-first verifier study.
 
-**Consequences:** pilot generation must not begin until its domain, prompts, model, parameters, item rules, and freeze commit are recorded.
+**Consequences:** the pilot must pass its preregistered feasibility gate before scaling.
+
+## D-004 — 2026-07-29 15:12 EDT
+
+**Status:** accepted and frozen
+
+**Decision:** Freeze the complete pilot protocol in `preregistration/pilot-preregistration.md`.
+
+**Frozen protocol commit:** `88833dae64cd263e85fbba4d3b6d0d659fe7f588`
+
+**Rationale:** The domain, corpus, temporal boundary, exact generator checkpoints, quantization, context limit, paragraph mix, claim taxonomy, context conditions, annotation pipeline, judge design, scoring rules, workload ceiling, and feasibility gates are now specified before primary generation.
+
+**Alternatives considered:** Qwen-family generators; broader clinical specialties; two-condition design; stochastic repeated generation; local small-model judge as primary.
+
+**Consequences:** Primary pilot generation may begin only from this frozen protocol. Any methodological change requires a new version and decision-log entry; failed or inconvenient items cannot be silently replaced.

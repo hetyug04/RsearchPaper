@@ -1,1 +1,35 @@
-m´ÎàßΩ©bu™‡∫gßµ÷≠k¯ßµÍ‚õ˚≠Áßäx≈…n≤*'±À/R∆†y∂¨{ÆvÁ∫h¢ù¯•zä.µ¯•y∂Îy©≠Ê§zw(uÁh∫⁄n∂Íbû⁄%äw¨°˘^ûaûÈÉu◊ú°◊ùy z)È∫ÿazZ]ä ek+aä…û≤∆†z(ß¶Îbûõ≠~)^uÁ⁄∫[_¢ª-v)Ë¢Îi∫⁄.∂õ≠~)^uÁ⁄∫[_¢ª-vã≠
+pmcid,reason_code,exclusion_reason
+PMC11467773,E-DATE-UNCERTAIN,"No epub date and no received/accepted dates in the PMC record; only a collection year of 2024. Earliest public appearance cannot be resolved against the 2024-12-01 cutoff."
+PMC11701191,E-DATE-PRE,"pub-date[epub]=2024-11-04, before the 2024-12-01 cutoff."
+PMC11750874,E-PARA,"Date-eligible (epub 2025-01-08) prospective cohort, but only two Results paragraphs fall in the 100-220 word band and there is no limitation paragraph in any usable band."
+PMC11751837,E-SUBDOMAIN,"Primary outcome is chronic kidney disease progression rather than a cardiovascular or metabolic endpoint; only 17 body paragraphs, giving a thin target and distractor inventory."
+PMC11761004,E-SUBDOMAIN,"Outcomes are renal and cognitive rather than cardiovascular or metabolic; zero Results paragraphs in the preferred band."
+PMC11806717,E-PRED,"Machine-learning cardiovascular risk-prediction paper; falls under the diagnostic-prediction and risk-score exclusion."
+PMC11833633,E-PARA,"No Results paragraph in the 100-350 word range; findings are carried almost entirely by tables."
+PMC11885081,E-DESIGN,"Published as a research letter reporting a pooled mediation analysis of three studies, not a single-cohort research article."
+PMC11951197,E-PARA,"No Results paragraph and only one Discussion paragraph in the preferred band across 51 body paragraphs."
+PMC12093672,E-DATE-PRE,"An American Heart Association congress abstract of what appears to be the same analysis was published earlier: Circulation 2023;148(suppl_1):Abstract 14297, 'The Portfolio Dietary Pattern and Risk of Cardiovascular Disease Mortality During 1988-2019 in US Adults: Findings From the Third National Health and Nutrition Examination Survey' (November 2023). Earliest public appearance therefore predates the cutoff."
+PMC12133703,E-PARA,"No Results paragraph in the preferred band; the results are reported almost entirely through tables and figures."
+PMC12155567,E-PRED,"Head-to-head comparison of the PREVENT risk score against the Pooled Cohort Equations; a risk-score evaluation paper."
+PMC12179864,E-PARA,"No Results paragraph in the 100-350 word range across 31 body paragraphs."
+PMC12286890,E-DESIGN,"Author response letter, not a primary cohort research article."
+PMC12334939,E-DESIGN,"Methods review article about analysing TriNetX data, not a primary cohort study."
+PMC12395389,E-PRED,"Validation and refinement of stroke risk-prediction scores."
+PMC12396445,E-SUBDOMAIN,"Outcomes are dementia and cognitive impairment after stroke rather than cardiovascular or metabolic endpoints."
+PMC12400556,E-PARA,"Only one interpretation paragraph in the preferred band and no limitation paragraph; the paper cannot supply two independent target paragraphs of distinct type."
+PMC12418469,E-DATE-UNCERTAIN,"A European Society of Cardiology congress abstract that appears to report the same Ontario statin-initiator cohort analysis was published earlier: 'Association of lipid target achievement and cardiovascular outcomes following statin initiation: a population-based cohort study', European Heart Journal 2024;45(Suppl 1):ehae666.2860 (October 2024). Whether it is the same analysis could not be confirmed from the sources reachable here; the earliest public date is therefore not verifiable as post-cutoff."
+PMC12421259,E-DATE-UNCERTAIN,"No epub date in the record; accepted 2024-09-19 with an issue date of 2025-07. BJGP Open posts accepted articles ahead of issue, so a pre-cutoff online-first version is plausible and cannot be ruled out."
+PMC12463975,E-PRED,"Substantial machine-learning prediction component (ten algorithms, comparative predictive value, SHAP-style model explanation) alongside the trajectory analysis."
+PMC12486684,E-PRED,"Evaluates whether a modified metabolic-syndrome definition improves prediction, reporting ROC, sensitivity and specificity; a risk-definition/prediction paper."
+PMC12533630,E-GENETIC,"Genetic-predisposition study using polygenic risk in UK Biobank; falls under the genetic-association exclusion."
+PMC12537428,E-SUBDOMAIN,"Outcome is major adverse kidney events rather than a cardiovascular or metabolic endpoint."
+PMC12553450,E-PRED,"Development and internal validation of a stroke prediction model."
+PMC12589983,E-PARA,"Only one Results paragraph in the preferred band and no limitation paragraph, despite 40 body paragraphs."
+PMC12735050,E-DESIGN,"Cross-sectional prevalence study of CKM syndrome, explicitly not a cohort design."
+PMC12744298,E-DESIGN,"Explicitly described in Methods as a community-based cross-sectional observational study, with a cross-sectional NHANES sample used for validation."
+PMC12744504,E-PARA,"Only 12 body paragraphs; no Results or Discussion paragraph reaches the 100-word floor except a single 221-350 word Results paragraph."
+PMC12755569,E-DATE-PRE,"pub-date[epub]=2022-10-28. High PMCID reflects a later PMC deposit, not a recent publication."
+PMC12756635,E-SR-META,"Combines a UK Biobank cohort analysis with a systematic review and meta-analysis of over 270,000 individuals; falls under the meta-analysis exclusion."
+PMC12797426,E-SUBDOMAIN,"Simultaneous pancreas-kidney versus kidney-alone transplant outcomes; a transplantation-outcomes study rather than cardiovascular or metabolic epidemiology. No epub date recorded."
+PMC12823638,E-PARA,"The Limitations section is a single 10-word stub and most Results paragraphs fall below 100 words (n=85 single-centre study). The paper is also internally inconsistent about its design, described as prospective in Methods and retrospective in Limitations."
+PMC13036950,E-PRED,"Machine-learning identification of cardiovascular predictive factors; a prediction-model paper."

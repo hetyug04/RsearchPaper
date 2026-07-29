@@ -12,14 +12,15 @@ This is not being framed as RLVR. A model judging another model is closer to mod
 
 ## Current phase
 
-Phase 0: feasibility and design freeze.
+Phase 1: frozen eight-paragraph feasibility pilot.
 
-The first empirical action is an eight-paragraph throughput pilot. The full study proceeds only if at least six of eight examples yield unambiguous atomic claims and the measured annotation workload supports the planned sample with contingency.
+The next action is to build the eligible-paper inventory and attempt eight candidate paragraph annotations. Primary generation proceeds only under the frozen protocol and only after the candidate items pass the inclusion rules.
 
 See:
 
+- `docs/project-tracker.md` for current status and next actions
 - `docs/research-plan.md` for the proposed design
-- `preregistration/pilot-preregistration.md` for frozen pilot decisions
+- `preregistration/pilot-preregistration.md` for the frozen pilot protocol
 - `research-log/LOG.md` for chronological work
 - `decisions/DECISIONS.md` for methodological decisions
 - `experiments/registry.csv` for experiment status

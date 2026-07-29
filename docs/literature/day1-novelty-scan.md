@@ -1,7 +1,7 @@
 # Day 1 novelty scan: masked-paragraph context and verifier audit
 
-**Study audited:** *Where Does Masked-Paragraph Reconstruction Signal Come From? A Context and Verifier Audit in Scientific Papers*  
-**Search date:** 2026-07-29  
+**Study audited:** *Where Does Masked-Paragraph Reconstruction Signal Come From? A Context and Verifier Audit in Scientific Papers*
+**Search date:** 2026-07-29
 **Scope:** targeted adversarial scan, not a systematic review
 
 ## 1. Executive verdict
